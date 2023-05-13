@@ -1,0 +1,488 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --dark-purple: #1A2238;
+    --light-purple: #9DAAF2;
+    --orange: #FF6A3D;
+    --yellow: #F4DB7D;
+    --transition: all 0.5s ease-in-out;
+}
+
+body{
+  display: flex;
+  min-height: 100vh;
+}
+
+.wrapper{
+  display: flex;
+  margin: 2rem;
+  justify-content: left;
+}
+.wrapper .static-txt{
+  color: var(--dark-purple);
+  font-size: 60px;
+  font-weight: 400;
+}
+.wrapper .dynamic-txts{
+  margin-left: 15px;
+  height: 90px;
+  line-height: 90px;
+  overflow: hidden;
+}
+.dynamic-txts li{
+  list-style: none;
+  color: #FC6D6D;
+  font-size: 60px;
+  font-weight: 500;
+  position: relative;
+  top: 0;
+  animation: slide 12s steps(4) infinite;
+}
+@keyframes slide {
+  100%{
+    top: -360px;
+  }
+}
+.dynamic-txts li span{
+  position: relative;
+  margin: 5px 0;
+  line-height: 90px;
+}
+.dynamic-txts li span::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: white;
+  border-left: 2px solid #FC6D6D;
+  animation: typing 3s steps(10) infinite;
+}
+@keyframes typing {
+  40%, 60%{
+    left: calc(100% + 30px);
+  }
+  100%{
+    left: 0;
+  }
+}
+
+#buttonPage{
+  justify-content: center;
+  align-items: center;
+  margin: 20rem 50%;
+  position:absolute;
+  background-color: green;
+  color: white;
+  border-radius: 4px;
+}
+
+.buttonRow1{
+  
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: auto 0;
+}
+
+.web3BoxButton{
+  font-size: 2rem;
+  margin: 2rem;
+  height: 5rem;
+  width: 5rem;
+  background-color: green;
+  color: white;
+  border-style: none;
+}
+
+#pageOne-webThree-content-container{
+  
+  background-image: linear-gradient(to right, var(--light-purple), white);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border-radius: 5px;
+}
+
+#pageTwo-webThree-content-container{
+  
+  background-image: linear-gradient(to right, var(--light-purple), white);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border-radius: 5px;
+}
+
+#pageThree-webThree-content-container{
+  
+  background-image: linear-gradient(to right, var(--light-purple), white);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border-radius: 5px;
+}
+
+#pageFour-webThree-content-container{
+  
+  background-image: linear-gradient(to right, var(--light-purple), white);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border-radius: 5px;
+}
+
+.headerText{
+  position: flex;
+  margin-left: 5rem;
+  margin-top: 5rem;
+  color: white;
+}
+
+.bodyOfPage{
+  display: inline-flex;
+}
+
+.bodyText{
+  display: flex;
+  width: 20rem;
+  height: 10rem;
+  color: white;
+  justify-content: left;
+  margin-left: 5rem;
+  margin-top: 5rem;
+  font-size: 1.2rem;
+}
+
+.pagePicture{
+    position:fixed;
+    margin-bottom: 5rem;
+    align-items: center;
+    margin-left: 50%;
+    margin-right: 50%;
+}
+
+.pagePictureWeb3Page2{
+  position:fixed;
+    margin-bottom: 5rem;
+    align-items: center;
+    margin-left: 50%;
+    margin-right: 50%;
+    width: 32rem;
+    height: 26rem;
+}
+
+.pagePictureWeb3Page3{
+  position:fixed;
+    margin-bottom: 5rem;
+    align-items: center;
+    margin-left: 50%;
+    margin-right: 50%;
+    width: 34rem;
+    height: 26rem;
+}
+
+.pagePictureWeb3Page4{
+  position:fixed;
+    margin-bottom: 5rem;
+    align-items: center;
+    margin-left: 50%;
+    margin-right: 50%;
+    width: 34rem;
+    height: 26rem;
+}
+
+#nextButtonWebThreePage1 {
+  position: fixed;
+  background: white;
+  border: 1px solid black;
+  color: black;
+  line-height: 50px;
+  padding: 6px 12px;
+  float: right;
+  bottom: 4rem;
+  right: 0px;
+  margin-right: 12%;
+  width:11rem;
+  opacity: 70%;
+  border-radius: 5px;
+  font-size: 1.2rem;
+}
+
+#nextButtonWebThreePage1:hover{
+  background:var(--orange);
+  opacity: 90%;
+}
+
+#nextButtonWebThreePage2 {
+  position: fixed;
+  background: white;
+  border: 1px solid black;
+  color: black;
+  line-height: 50px;
+  padding: 6px 12px;
+  float: right;
+  bottom: 4rem;
+  right: 0px;
+  margin-right: 12%;
+  width:11rem;
+  opacity: 70%;
+  border-radius: 5px;
+  font-size: 1.2rem;
+}
+
+#nextButtonWebThreePage2:hover{
+  background:var(--orange);
+  opacity: 90%;
+}
+
+#nextButtonWebThreePage3 {
+  position: fixed;
+  background: white;
+  border: 1px solid black;
+  color: black;
+  line-height: 50px;
+  padding: 6px 12px;
+  float: right;
+  bottom: 4rem;
+  right: 0px;
+  margin-right: 12%;
+  width:11rem;
+  opacity: 70%;
+  border-radius: 5px;
+  font-size: 1.2rem;
+}
+
+#nextButtonWebThreePage3:hover{
+  background:var(--orange);
+  opacity: 90%;
+}
+
+#nextButtonWebThreePage4 {
+  position: fixed;
+  background: white;
+  border: 1px solid black;
+  color: black;
+  line-height: 50px;
+  padding: 6px 12px;
+  float: right;
+  bottom: 4rem;
+  right: 0px;
+  margin-right: 12%;
+  width:11rem;
+  opacity: 70%;
+  border-radius: 5px;
+  font-size: 1.2rem;
+}
+
+#nextButtonWebThreePage4:hover{
+  background:var(--orange);
+  opacity: 90%;
+}
+
+#nextButtonWebThreeQuiz1::after {
+  content: '→';
+  font-size: 18px;
+  margin-left: 4px;
+  font-size: 1.2rem;
+}
+
+#nextButtonWebThreeQuiz1 {
+  position: fixed;
+  background: white;
+  border: 1px solid black;
+  color: black;
+  line-height: 50px;
+  padding: 6px 12px;
+  float: right;
+  bottom: 4rem;
+  right: 0px;
+  margin-right: 12%;
+  width:11rem;
+  opacity: 70%;
+  border-radius: 5px;
+  font-size: 1.2rem;
+}
+
+#nextButtonWebThreeQuiz1:hover{
+  background:var(--orange);
+  opacity: 90%;
+}
+
+#nextButtonWebThreeQuiz1::after {
+  content: '→';
+  font-size: 18px;
+  margin-left: 4px;
+  font-size: 1.2rem;
+}
+
+#nextButtonWebThreeQuiz2::after {
+  content: '→';
+  font-size: 18px;
+  margin-left: 4px;
+  font-size: 1.2rem;
+}
+
+#nextButtonWebThreeQuiz2 {
+  position: fixed;
+  background: white;
+  border: 1px solid black;
+  color: black;
+  line-height: 50px;
+  padding: 6px 12px;
+  float: right;
+  bottom: 4rem;
+  right: 0px;
+  margin-right: 12%;
+  width:11rem;
+  opacity: 70%;
+  border-radius: 5px;
+  font-size: 1.2rem;
+}
+
+#nextButtonWebThreeQuiz2:hover{
+  background:var(--orange);
+  opacity: 90%;
+}
+
+#nextButtonWebThreeQuiz3::after {
+  content: '→';
+  font-size: 18px;
+  margin-left: 4px;
+  font-size: 1.2rem;
+}
+
+#nextButtonWebThreeQuiz3 {
+  position: fixed;
+  background: white;
+  border: 1px solid black;
+  color: black;
+  line-height: 50px;
+  padding: 6px 12px;
+  float: right;
+  bottom: 4rem;
+  right: 0px;
+  margin-right: 12%;
+  width:11rem;
+  opacity: 70%;
+  border-radius: 5px;
+  font-size: 1.2rem;
+}
+
+#nextButtonWebThreeQuiz3:hover{
+  background:var(--orange);
+  opacity: 90%;
+}
+
+#questionOne-webThree-container{
+  justify-content: center;
+  align-items: center;
+  margin: 10rem auto;
+  display: absolute;
+  height: 18rem;
+  width: 40rem;
+  border: var(--dark-purple);
+  border-style: solid;
+  border-width: thick;
+}
+
+#questionTwo-webThree-container{
+  justify-content: center;
+  align-items: center;
+  margin: 10rem auto;
+  display: absolute;
+  height: 18rem;
+  width: 40rem;
+  border: var(--dark-purple);
+  border-style: solid;
+  border-width: thick;
+}
+
+#questionThree-webThree-container{
+  justify-content: center;
+  align-items: center;
+  margin: 10rem auto;
+  display: absolute;
+  height: 18rem;
+  width: 40rem;
+  border: var(--dark-purple);
+  border-style: solid;
+  border-width: thick;
+}
+
+.quiz-btn{
+  background-color: var(--orange);
+  font-size: .9rem;
+  margin: .5rem;
+  height: 2.3rem;
+  border-radius: 4px;
+}
+
+.quiz-btn:hover{
+  background-color: rgb(223, 60, 0)
+}
+
+.question{
+  margin: 1rem;
+  font-size: 1.2rem;
+}
+
+.answer-buttons{
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 10px;
+  margin: 20px 0;
+  margin-top: 3rem;
+}
+
+
+#correctBox{
+  font: 2rem;
+  background-color: rgb(13, 160, 25);
+  height: 3rem;
+  width: 10rem;
+  position: absolute;
+  left: 44%;
+  right: 50%;
+  bottom: 30%;
+}
+
+#incorrectBox{
+  font: 1.8rem;
+  background-color: rgb(205, 26, 26);
+  height: 3rem;
+  width: 10rem;
+  position: absolute;
+  left: 44%;
+  right: 50%;
+  bottom: 30%;
+}
+
+.hide{
+  display: none;
+}
